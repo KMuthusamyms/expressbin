@@ -31,7 +31,7 @@ app.get('/customer/:phno/:choice/:count', function (req, res) {
         } else {
             message = "THANKS FOR RECYCLING PLASTICS. THANKS FOR DONATING ₹" + amount + " TO CHILDEREN'S EDUCATION";
         }
-        let link = encodeURI("http://testingsite07.000webhostapp.com/message/send-sms.php?msg=" + message + "&num=" + phno);
+        let link = encodeURI("http://<smslink>?msg=" + message + "&num=" + phno);
         console.log(link);
         apirequest.get(link, (error, response, body) => { });
     } else {
