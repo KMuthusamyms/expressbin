@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Dustbin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./node/jquery/dist/jquery.js"></script>
+    <script src="./node/@tensorflow/tfjs/dist/tf.min.js"></script>
+    <script src="./node/@teachablemachine/image/dist/teachablemachine-image.min.js"></script>
+    <script src="./assets/scripts.js"></script>
+    <script src="./node/sweetalert2/dist/sweetalert2.js"></script>
+    <link rel="stylesheet" href="./node/sweetalert2/dist/sweetalert2.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <div class="center">
+        <p>Smart Dustbin</p>
+        <div id="webcom">
+        <div id="webcam-container"></div></div>
+        <button onclick="init()" id="start_button" class="bubbly-button">Start</button>
+    </div>
+</body>
+
+</html>
